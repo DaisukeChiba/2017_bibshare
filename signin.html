@@ -30,25 +30,22 @@
     <div class="container">
     <div class="container-fluid">
 
-            <h1 class="text-center">Hello</h1>
+            <h1 class="text-center">BibShare</h1>
 
             <!-- Bootstrap4に用意されているクラス【card編】 -->
             <!-- https://webnetamemo.com/coding/bootstrap4/201711116162 -->
-            <div class="card bg-light mx-auto"  style="max-width: 30rem;">
-                <div class="card-header text-center">
-                    サインイン
-                </div>
+            <div class="card bg-light mx-auto center-block"  style="max-width: 30rem;">
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <label>Eメールアドレス</label>
-                            <input type="email" id="signinemail" class="form-control" />
+                            <label>Email address</label>
+                            <input type="email" id="signinemail" class="form-control" placeholder="Email address" required autofocus />
                         </div>
                         <div class="form-group">
-                            <label>パスワード</label>
-                            <input type="password" id="signinpassword" class="form-control" />
+                            <label>Password</label>
+                            <input type="password" id="signinpassword" class="form-control" placeholder="Password" required />
                         </div>
-                        <a href="aaa.html"><button type="button" class="btn btn-primary">Go!!</button></a>
+                        <a href="aaa.html"><button type="button" class="btn btn-primary btn-block">Sign in</button></a>
                     </form>
                 </div>
             </div>
