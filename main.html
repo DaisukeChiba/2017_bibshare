@@ -16,8 +16,27 @@
         <style type="text/css">
 
         /* Google Web Fonts */
-        h1 {
+        h4 {
             font-family: 'Slabo 27px', serif;
+        }
+
+        /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
+        /* https://ottan.xyz/grid-bootstrap-css-5260/ */
+        img {
+            max-width: 80%;
+        }
+        .grid-img {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 30%;
+        }
+        .grid-img img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
 
         </style>
@@ -25,38 +44,42 @@
     </head>
 
     <body class="bg-light">
-        <div class="container-fluid">
 
-            <div class="row my-4 px-5">
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_01.jpg" /></a>
+        <!-- As a heading -->
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+          <span class="navbar-brand mb-0"><h4>BibShare</h4></span>
+        </nav>
+
+        <div class="container" style="margin-top: 80px;">
+            <div class="row">
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_01.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_02.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_02.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_03.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_03.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_04.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_04.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_05.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_05.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_06.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_06.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_07.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_07.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_08.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_08.jpg" />
                 </div>
-                <div class="col-4 mb-2">
-                    <a href="#"><img class="img-fluid" src="./image/book_09.jpg" /></a>
+                <div class="col-3 grid-img">
+                    <img class="rounded" src="./image/book_09.jpg" />
                 </div>
             </div>
-
         </div>
 
     </body>
