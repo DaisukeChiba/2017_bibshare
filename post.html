@@ -45,57 +45,33 @@
         <!-- ナビゲーションヘッダ -->
         <nav class="navbar fixed-top navbar-dark bg-dark">
             <a class="navbar-brand" href="main.html"><h3>BibShare</h3></a>
-            <a class="navbar-text" href="post.html">
+            <span class="navbar-text">
                 <button class="btn btn-primary" type="button">Post</button>
-            </a>
+            </span>
         </nav>
 
         <div class="container">
 
-            <!-- bootstrap4のグリッドシステムを理解する -->
-            <!-- https://qiita.com/Nerosui777/items/5669583f2d8f40b4a800 -->
+            <div class="row justify-content-center" style="margin-top: 100px;">
 
-            <!-- 検索フォーム -->
-            <div class="row justify-content-center">
                 <form class="form-inline" style="margin-top: 100px;">
                     <div class="form-group mx-sm-2 mb-2">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Search</button>
                 </form>
-            </div>
 
-            <!-- 本棚グリッド -->
-            <div class="row" style="margin-top: 10px;">
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_01.jpg"></a>
+                <div class="col-9">
+                    <form class="form-inline">
+                        <div class="form-group mx-sm-2 mb-2">
+                            <label for="title" class="col-sm-2 col-form-label">Keyword</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="title" value="Keyword">
+                                <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_02.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_03.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_04.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_05.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_06.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_07.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_08.jpg"></a>
-                </div>
-                <div class="col-2 grid-img">
-                    <a href="book.html"><img class="rounded" src="./image/book_09.jpg"></a>
-                </div>
-            </div>
-
         </div>
 
     </body>
