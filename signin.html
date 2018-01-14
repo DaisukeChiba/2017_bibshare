@@ -24,7 +24,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-color: #464646;
-            margin-bottom: 40px;    /* フッタ下側マージン高 */
+            /*margin-bottom: 40px;*/    /* フッタ下側マージン高 */
         }
 
         /* Google Web Fonts */
@@ -32,57 +32,51 @@
             font-family: 'Slabo 27px', serif;
         }
 
+        /*
         .footer {
             position: absolute;
             bottom: 0;
             width: 100%;
-            height: 40px;   /* フッタの固定高 */
-            line-height: 40px;  /* テキストの垂直中央配置 */
+            height: 40px;   / フッタの固定高
+            line-height: 40px;  /* テキストの垂直中央配置
         }
-
+        */
         </style>
 
     </head>
 
     <body>
         <div class="container-fluid">
+            <h1 class="text-center text-dark m-4">BibShare</h1>
 
-            <div class="row m-4">
-
-                <div class="col-sm mb-4">
-                    <h1 class="text-dark">BibShare</h1>
-                    ここに説明を書くといいよ！
-                </div>
-
-                <div class="col-sm">
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label>Email address</label>
-                                    <input type="email" id="signinemail" class="form-control" placeholder="Email address" required autofocus />
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" id="signinpassword" class="form-control" placeholder="Password" required />
-                                </div>
-                                <a href="aaa.html"><button type="button" class="btn btn-primary btn-block">Sign in</button></a>
-                            </form>
-                        </div>
-                        <div class="card-footer">
-                            <div class="mb-2">Don't have an account?</div>
-                            <a href="aaa.html"><button type="button" class="btn btn-success btn-block">Register</button></a>
-                        </div>
+            <div class="row m-4 justify-content-center">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Email address</label>
+                                <input type="email" id="signinemail" class="form-control" placeholder="Email address" required autofocus />
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" id="signinpassword" class="form-control" placeholder="Password" required />
+                            </div>
+                            <a href="main.html"><button type="button" class="btn btn-primary btn-block">Sign in</button></a>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mb-2">Don't have an account?</div>
+                        <a href="main.html"><button type="button" class="btn btn-success btn-block">Register</button></a>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
+        <!--
         <footer class="footer bg-light">
             <div class="text-center">Powered by 2017 Fin1-Workshop Team A</div>
         </footer>
+        -->
 
     </body>
 </html>

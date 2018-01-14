@@ -10,34 +10,26 @@
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-        <!-- Google Web Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
         <style type="text/css">
 
-        /* Google Web Fonts */
-        h4 {
-            font-family: 'Slabo 27px', serif;
-        }
-
-        /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
-        /* https://ottan.xyz/grid-bootstrap-css-5260/ */
-        img {
-            max-width: 80%;
-        }
-        .grid-img {
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 30%;
-        }
-        .grid-img img {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
+            /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
+            /* https://ottan.xyz/grid-bootstrap-css-5260/ */
+            img {
+                max-width: 80%;
+            }
+            .grid-img {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 30%;
+            }
+            .grid-img img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
 
         </style>
 
@@ -45,41 +37,58 @@
 
     <body class="bg-light">
 
-        <!-- As a heading -->
+        <!-- ナビゲーションヘッダ -->
         <nav class="navbar fixed-top navbar-dark bg-dark">
-          <span class="navbar-brand mb-0"><h4>BibShare</h4></span>
+            <a class="navbar-brand" href="#">BibShare</a>
+            <span class="navbar-text">
+                <button class="btn btn-primary" type="button">Post</button>
+            </span>
         </nav>
 
-        <div class="container" style="margin-top: 80px;">
-            <div class="row">
+        <div class="container">
+
+            <!-- bootstrap4のグリッドシステムを理解する -->
+            <!-- https://qiita.com/Nerosui777/items/5669583f2d8f40b4a800 -->
+            <div class="row justify-content-center">
+            <form class="form-inline" style="margin-top: 100px;">
+                <div class="form-group mx-sm-2 mb-2">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </form>
+            </div>
+
+            <!-- グリッド -->
+            <div class="row" style="margin-top: 10px;">
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_01.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_01.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_02.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_02.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_03.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_03.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_04.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_04.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_05.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_05.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_06.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_06.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_07.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_07.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_08.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_08.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <img class="rounded" src="./image/book_09.jpg" />
+                    <a href="#"><img class="rounded" src="./image/book_09.jpg"></a>
                 </div>
             </div>
+
         </div>
 
     </body>
