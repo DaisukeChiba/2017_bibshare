@@ -10,8 +10,10 @@
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-        <style type="text/css">
+        <!-- Google Web Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
+        <style type="text/css">
             /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
             /* https://ottan.xyz/grid-bootstrap-css-5260/ */
             img {
@@ -31,15 +33,18 @@
                 margin: auto;
             }
 
+            /* Google Web Fonts */
+            h3 {
+                font-family: 'Slabo 27px', serif;
+            }
         </style>
-
     </head>
 
     <body class="bg-light">
 
         <!-- ナビゲーションヘッダ -->
         <nav class="navbar fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">BibShare</a>
+            <a class="navbar-brand" href="main.html"><h3>BibShare</h3></a>
             <span class="navbar-text">
                 <button class="btn btn-primary" type="button">Post</button>
             </span>
@@ -49,6 +54,8 @@
 
             <!-- bootstrap4のグリッドシステムを理解する -->
             <!-- https://qiita.com/Nerosui777/items/5669583f2d8f40b4a800 -->
+
+            <!-- 検索フォーム -->
             <div class="row justify-content-center">
             <form class="form-inline" style="margin-top: 100px;">
                 <div class="form-group mx-sm-2 mb-2">
@@ -58,34 +65,34 @@
             </form>
             </div>
 
-            <!-- グリッド -->
+            <!-- 本棚グリッド -->
             <div class="row" style="margin-top: 10px;">
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_01.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_01.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_02.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_02.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_03.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_03.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_04.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_04.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_05.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_05.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_06.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_06.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_07.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_07.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_08.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_08.jpg"></a>
                 </div>
                 <div class="col-3 grid-img">
-                    <a href="#"><img class="rounded" src="./image/book_09.jpg"></a>
+                    <a href="book.html"><img class="rounded" src="./image/book_09.jpg"></a>
                 </div>
             </div>
 

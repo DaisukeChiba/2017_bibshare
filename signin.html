@@ -14,33 +14,21 @@
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
         <style type="text/css">
-        body {
-            /* 背景画像の定義 */
-            /* 画面いっぱいに背景画像を設定する方法 */
-            /* https://qiita.com/yukisaibai/items/c63a945b2fdf17cfec94 */
-            background-image: url("./image/main2.jpg");
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            background-color: #464646;
-            /*margin-bottom: 40px;*/    /* フッタ下側マージン高 */
-        }
-
-        /* Google Web Fonts */
-        h1 {
-            font-family: 'Slabo 27px', serif;
-        }
-
-        /*
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 40px;   / フッタの固定高
-            line-height: 40px;  /* テキストの垂直中央配置
-        }
-        */
+            body {
+                /* 背景画像の定義 */
+                /* 画面いっぱいに背景画像を設定する方法 */
+                /* https://qiita.com/yukisaibai/items/c63a945b2fdf17cfec94 */
+                background-image: url("./image/main2.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #464646;
+            }
+            /* Google Web Fonts */
+            h1 {
+                font-family: 'Slabo 27px', serif;
+            }
         </style>
 
     </head>
@@ -49,8 +37,9 @@
         <div class="container-fluid">
             <h1 class="text-center text-dark m-4">BibShare</h1>
 
+            <!-- ログインフォーム -->
             <div class="row m-4 justify-content-center">
-                <div class="card bg-light">
+                <div class="card bg-light" style="width: 20rem;">
                     <div class="card-body">
                         <form>
                             <div class="form-group">
@@ -61,22 +50,16 @@
                                 <label>Password</label>
                                 <input type="password" id="signinpassword" class="form-control" placeholder="Password" required />
                             </div>
-                            <a href="main.html"><button type="button" class="btn btn-primary btn-block">Sign in</button></a>
+                            <button type="button" class="btn btn-primary btn-block" onclick="location.href='main.html';">Sign in</button>
                         </form>
                     </div>
                     <div class="card-footer">
                         <div class="mb-2">Don't have an account?</div>
-                        <a href="main.html"><button type="button" class="btn btn-success btn-block">Register</button></a>
+                        <button type="button" class="btn btn-success btn-block"  onclick="location.href='main.html';">Register</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--
-        <footer class="footer bg-light">
-            <div class="text-center">Powered by 2017 Fin1-Workshop Team A</div>
-        </footer>
-        -->
 
     </body>
 </html>

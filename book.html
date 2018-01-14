@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BibShare</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <!-- Google Web Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+        <style type="text/css">
+            /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
+            /* https://ottan.xyz/grid-bootstrap-css-5260/ */
+            img {
+                max-width: 80%;
+            }
+            .grid-img {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 30%;
+            }
+            .grid-img img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            /* Google Web Fonts */
+            h3 {
+                font-family: 'Slabo 27px', serif;
+            }
+        </style>
+    </head>
+
+    <body class="bg-light">
+
+        <!-- ナビゲーションヘッダ -->
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="main.html"><h3>BibShare</h3></a>
+            <span class="navbar-text">
+                <button class="btn btn-primary" type="button">Post</button>
+            </span>
+        </nav>
+
+        <div class="container">
+
+            <div class="row" style="margin-top: 100px;">
+
+                <!-- 画像グリッド -->
+                <div class="col-3 text-center">
+                    <a href="#"><img class="rounded" src="./image/book_01.jpg"></a>
+                    <div class="mt-4">
+                        <img src="./image/add_to_slack.png">
+                    </div>
+                </div>
+
+                <!-- 入力フォームグリッド -->
+                <div class="col-9">
+                    <form>
+                        <div class="form-group row">
+                            <label for="title" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="title" value="ブラタモリ 1 長崎金沢鎌倉">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="author" class="col-sm-2 col-form-label">Author</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="author" value="NHK「ブラタモリ」制作班">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="publisher" class="col-sm-2 col-form-label">Publisher</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="publisher" value="KADOKAWA">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="tag" class="col-sm-2 col-form-label">Tag</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="tag" value="#buratamori #kamakura">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="comment" class="col-sm-2 col-form-label">Comment</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="comment" rows="5">旅が何倍も楽しくなる!NHK『ブラタモリ』待望の書籍化!“坂の町・長崎”の始まりとは?長崎の近代化は海から?加賀百万石はどう守られた!?金沢は美のまち!?鎌倉800年の“まちづくり”とは?鎌倉が観光で発展し続ける理由は?</textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary" onclick="location.href='main.html';">Update</button>
+                        <button type="button" class="btn btn-secondary" onclick="location.href='main.html';">Cancel</button>
+                    </div>
+                </div>
+        </div>
+
+    </body>
+</html>
