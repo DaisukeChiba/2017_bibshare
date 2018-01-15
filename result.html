@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BibShare</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <!-- Google Web Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+        <style type="text/css">
+            /* Google Web Fonts */
+            h3 {
+                font-family: 'Slabo 27px', serif;
+            }
+        </style>
+    </head>
+
+    <body class="bg-light">
+
+        <!-- ナビゲーションヘッダ -->
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand mt-2" href="main.html"><h3>BibShare</h3></a>
+            <span class="navbar-text">
+                <a href="signin.html"><button class="btn btn-secondary mr-auto" type="button">Logout</button></a>
+                <a href="post.html"><button class="btn btn-primary" type="button">Post</button></a>
+            </span>
+        </nav>
+
+        <div class="container">
+
+            <div class="card" style="margin-top: 100px;">
+                <div class="card-header">
+                    Search results
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-3 text-center">
+                                <img class="rounded" src="./image/book_01.jpg">
+                                <button type="button" class="btn btn-primary btn-block mt-3" onclick="location.href='book.html';">Select</button>
+                            </div>
+                            <div class="col-9 mt-2">
+                                <form>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Title</label>
+                                        <div class="col-sm-9">
+                                            <label>ブラタモリ 1 長崎金沢鎌倉</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Author</label>
+                                        <div class="col-sm-9">
+                                            <label>NHK「ブラタモリ」制作班</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Publisher</label>
+                                        <div class="col-sm-9">
+                                            <label>KADOKAWA</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-3 text-center">
+                                <img class="rounded" src="./image/book_02.jpg">
+                                <button type="button" class="btn btn-primary btn-block mt-3" onclick="location.href='book.html';">Select</button>
+                            </div>
+                            <div class="col-9 mt-2">
+                                <form>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Title</label>
+                                        <div class="col-sm-9">
+                                            <label>ブラタモリ 1 長崎金沢鎌倉</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Author</label>
+                                        <div class="col-sm-9">
+                                            <label>NHK「ブラタモリ」制作班</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Publisher</label>
+                                        <div class="col-sm-9">
+                                            <label>KADOKAWA</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-3 text-center">
+                                <img class="rounded" src="./image/book_03.jpg">
+                                <button type="button" class="btn btn-primary btn-block mt-3" onclick="location.href='book.html';">Select</button>
+                            </div>
+                            <div class="col-9 mt-2">
+                                <form>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Title</label>
+                                        <div class="col-sm-9">
+                                            <label>ブラタモリ 1 長崎金沢鎌倉</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Author</label>
+                                        <div class="col-sm-9">
+                                            <label>NHK「ブラタモリ」制作班</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-3 text-info">Publisher</label>
+                                        <div class="col-sm-9">
+                                            <label>KADOKAWA</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="row justify-content-center my-4">
+                <div>
+                    <button type="button" class="btn btn-secondary btn-block" onclick="location.href='main.html';">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

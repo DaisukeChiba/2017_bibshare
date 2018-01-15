@@ -38,16 +38,21 @@
                 font-family: 'Slabo 27px', serif;
             }
         </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </head>
 
     <body class="bg-light">
 
         <!-- ナビゲーションヘッダ -->
         <nav class="navbar fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="main.html"><h3>BibShare</h3></a>
-            <a class="navbar-text" href="post.html">
-                <button class="btn btn-primary" type="button">Post</button>
-            </a>
+            <a class="navbar-brand mt-2" href="main.html"><h3>BibShare</h3></a>
+            <span class="navbar-text">
+                <a href="signin.html"><button class="btn btn-secondary mr-auto" type="button">Logout</button></a>
+                <a href="post.html"><button class="btn btn-primary" type="button">Post</button></a>
+            </span>
         </nav>
 
         <div class="container">
@@ -56,13 +61,15 @@
             <!-- https://qiita.com/Nerosui777/items/5669583f2d8f40b4a800 -->
 
             <!-- 検索フォーム -->
-            <div class="row justify-content-center">
-                <form class="form-inline" style="margin-top: 100px;">
-                    <div class="form-group mx-sm-2 mb-2">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <div class="row justify-content-center" style="margin-top: 100px;">
+                <div class="col-sm-8">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button">Search</button>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Search</button>
-                </form>
+                </div>
             </div>
 
             <!-- 本棚グリッド -->

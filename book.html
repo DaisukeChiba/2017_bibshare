@@ -14,25 +14,6 @@
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
         <style type="text/css">
-            /* グリッドレイアウトで高さも横幅もバラバラの画像を綺麗に並べる方法 */
-            /* https://ottan.xyz/grid-bootstrap-css-5260/ */
-            img {
-                max-width: 80%;
-            }
-            .grid-img {
-                position: relative;
-                overflow: hidden;
-                padding-bottom: 30%;
-            }
-            .grid-img img {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
-
             /* Google Web Fonts */
             h3 {
                 font-family: 'Slabo 27px', serif;
@@ -44,64 +25,69 @@
 
         <!-- ナビゲーションヘッダ -->
         <nav class="navbar fixed-top navbar-dark bg-dark">
-            <a class="navbar-brand" href="main.html"><h3>BibShare</h3></a>
-            <a class="navbar-text" href="post.html">
-                <button class="btn btn-primary" type="button">Post</button>
-            </a>
+            <a class="navbar-brand mt-2" href="main.html"><h3>BibShare</h3></a>
+            <span class="navbar-text">
+                <a href="signin.html"><button class="btn btn-secondary mr-auto" type="button">Logout</button></a>
+                <a href="post.html"><button class="btn btn-primary" type="button">Post</button></a>
+            </span>
         </nav>
 
         <div class="container">
-
-            <div class="row" style="margin-top: 100px;">
+            <div class="row justify-content-center" style="margin-top: 100px;">
 
                 <!-- 画像グリッド -->
-                <div class="col-3 text-center">
+                <div class="col-sm-3 text-center">
                     <a href="#"><img class="rounded" src="./image/book_01.jpg"></a>
                     <div class="mt-4">
-                        <a href="https://slack.com/intl/ja-jp"><img src="./image/add_to_slack.png"></a>
+                        <a href="https://slack.com/intl/ja-jp"><img src="./image/add_to_slack.png" width="100px"></a>
                     </div>
                 </div>
 
+                <!-- Bootstrapのグリッドシステムについてまとめてみた -->
+                <!-- https://qiita.com/akatsuki174/items/53b7367b04ed0b066bbf -->
                 <!-- 入力フォームグリッド -->
                 <div class="col-9">
                     <form>
                         <div class="form-group row">
-                            <label for="title" class="col-sm-2 col-form-label">Title</label>
-                            <div class="col-sm-10">
+                            <label for="title" class="col-sm-3 col-form-label text-info">Title</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="title" value="ブラタモリ 1 長崎金沢鎌倉">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="author" class="col-sm-2 col-form-label">Author</label>
-                            <div class="col-sm-10">
+                            <label for="author" class="col-sm-3 col-form-label text-info">Author</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="author" value="NHK「ブラタモリ」制作班">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="publisher" class="col-sm-2 col-form-label">Publisher</label>
-                            <div class="col-sm-10">
+                            <label for="publisher" class="col-sm-3 col-form-label text-info">Publisher</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="publisher" value="KADOKAWA">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="tag" class="col-sm-2 col-form-label">Tag</label>
-                            <div class="col-sm-10">
+                            <label for="tag" class="col-sm-3 col-form-label text-info">Tag</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="tag" value="#buratamori #kamakura">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="comment" class="col-sm-2 col-form-label">Comment</label>
-                            <div class="col-sm-10">
+                            <label for="comment" class="col-sm-3 col-form-label text-info">Comment</label>
+                            <div class="col-sm-9">
                                 <textarea class="form-control" id="comment" rows="5">旅が何倍も楽しくなる!NHK『ブラタモリ』待望の書籍化!“坂の町・長崎”の始まりとは?長崎の近代化は海から?加賀百万石はどう守られた!?金沢は美のまち!?鎌倉800年の“まちづくり”とは?鎌倉が観光で発展し続ける理由は?</textarea>
                             </div>
                         </div>
                     </form>
-                    <div class="text-right">
-                        <button type="button" class="btn btn-primary" onclick="location.href='main.html';">Update</button>
-                        <button type="button" class="btn btn-secondary" onclick="location.href='main.html';">Cancel</button>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary btn-block" onclick="location.href='main.html';">Update</button>
+                            <button type="button" class="btn btn-secondary btn-block mb-4" onclick="location.href='main.html';">Cancel</button>
+                        </div>
                     </div>
                 </div>
-        </div>
 
+            </div>
+        </div>
     </body>
 </html>
