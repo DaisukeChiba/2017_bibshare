@@ -33,51 +33,52 @@
         </nav>
 
         <div class="container">
-            <div class="row justify-content-center" style="margin-top: 100px;">
 
-                <div class="card" style="width: 90%;">
-                    <div class="card-header">
-                        Post the book information
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <form>
-                                <label for="keyword">Keywords</label>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" id="keyword" placeholder="Search" aria-label="Search">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-primary" type="button" onclick="location.href='post1.html';">Search</button>
+            <div class="container">
+                <div class="row justify-content-center" style="margin-top: 100px;">
+
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            Search for a book to post
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="keyword" placeholder="Keywords">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" type="button" onclick="location.href='post1.html';">Search</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </li>
+                                </form>
+                            </li>
 
-                        <li class="list-group-item">
-                            <!-- Bootstrapのファイルをアップロードするボタンを標準デザインのボタンにする -->
-                            <!-- https://qiita.com/nakapython/items/46d44793827920282f75 -->
-                            <label class="btn btn-primary btn-block">
-                                Scan the ISBN barcode
-                                <input class="mb-2" type="file" accept="image/*" capture="camera" style="display:none" onclick="location.href='post1.html';">
-                            </label>
-                        </li>
+                            <li class="list-group-item">
+                                <!-- Bootstrapのファイルをアップロードするボタンを標準デザインのボタンにする -->
+                                <!-- https://qiita.com/nakapython/items/46d44793827920282f75 -->
+                                <label class="btn btn-primary btn-block">
+                                    Scan the ISBN barcode
+                                    <input class="mb-2" type="file" accept="image/*" capture="camera" style="display:none" onclick="location.href='post1.html';">
+                                </label>
+                            </li>
 
-                        <li class="list-group-item">
-                            <label class="btn btn-success btn-block">
-                                Scan the book cover
-                                <input class="mb-2" type="file" accept="image/*" capture="camera" style="display:none" onclick="location.href='post1.html';">
-                            </label>
-                        </li>
-                    </ul>
+                            <li class="list-group-item">
+                                <label class="btn btn-success btn-block">
+                                    Scan the book cover
+                                    <input class="mb-2" type="file" accept="image/*" capture="camera" style="display:none" onclick="location.href='post1.html';">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class="row justify-content-center my-4">
-                <div>
-                    <button type="button" class="btn btn-secondary btn-block" onclick="location.href='main.html';">Cancel</button>
+                <div class="row justify-content-center my-4">
+                    <div>
+                        <button type="button" class="btn btn-secondary btn-block" onclick="location.href='main.html';">Cancel</button>
+                    </div>
                 </div>
             </div>
-
 
         </div>
 
